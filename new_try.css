@@ -1,0 +1,214 @@
+/*-----------
+- HTML Tags -
+-----------*/
+body {
+    font: 600 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #f69d75;
+    color: #555555;
+}
+
+h1 {
+    padding: 10px;
+    margin-bottom: 15;
+}
+
+h2 {
+    margin-top: 50;
+    font-size: 200%;
+    text-align: center;
+
+}
+
+/*-----
+- IDs -
+-----*/
+.header {
+    text-align: center;
+    font-size: 400%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+img.profile {
+    margin-right: 60;
+    width: 30%;
+    float: right;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+p.home {
+    padding: 10px;
+}
+
+div.box_left {
+    margin-top: 5;
+    margin-left: 0;
+    padding: 10px;
+    width: 40%;
+    background-color: rgb(233, 233, 233);
+    float: left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-bottom: 30;
+    text-align: left;
+}
+
+div.box_right {
+    margin-top: 5;
+    margin-right: 60;
+    padding: 10px;
+    width: 40%;
+    background-color: rgb(233, 233, 233);
+    float: right;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-bottom: 30;
+}
+
+.page_title {
+    color: black;
+}
+
+.exp_title {
+    margin-top: -40;
+    font-size: 150%;
+}
+
+.exp_company {
+    margin-top: -20;
+    text-align: center;
+    color: rgb(122, 122, 122);
+}
+
+.exp_content {
+    
+}
+
+.exp_date {
+
+}
+
+/*----------------
+- Navigation Bar -
+----------------*/
+#nav_bar {
+    margin-left: 0;      /* combine menu bar with header */
+    padding: 0;     /* display menu bar from left align */
+    overflow: hidden;
+    text-align: center;
+    float: center;
+    margin-left: 25%;
+    list-style: none;
+}
+
+#nav_item {
+    float: left;
+    background-color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+li a, .dropbtn {
+    display: inline;      /* display links in horizontal line */
+    color: grey;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;      /* remove underline */ 
+}
+  
+li a:hover, .dropdown:hover .dropbtn {
+    color: black;
+}
+  
+li.dropdown {
+    display: inline-block;
+    padding: 0px;
+}
+  
+.dropdown-content {
+    display: none; position: absolute;      /* set parameters for the drop down box location and visibility */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    font-weight: 5;
+    padding: 12px 16px;
+    text-decoration: none;      /* remove underline */
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.active {
+    color: black;
+}
+
+/*-------
+- Modal -
+-------*/
+.modal-window {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #ffffff;
+    color: #333333;
+  }
+  .modal-window header {
+    font-weight: bold;
+  }
+  .modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+    color: #333333;
+  }
+  
+  .modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+  }
+  .modal-close:hover {
+    color: #000;
+  }
+  
+  a {
+    color: inherit;
+  }
