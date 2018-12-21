@@ -120,7 +120,19 @@ img.profile {
     text-align: center;
     color: rgb(122, 122, 122);
 }
-
+.footer {
+    clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: -40px;
+    padding-top: 15px;
+    background-color: #000000;
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    bottom: -15px;
+    color: white;
+}
 
 /*----------------
 - Navigation Bar -
