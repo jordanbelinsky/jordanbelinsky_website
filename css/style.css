@@ -40,6 +40,14 @@ h5 {
 /*---------
 - Classes -
 ---------*/
+#wrapper {
+    min-height:100%;
+    position:relative;
+}
+#content {
+    padding:10px;
+    padding-bottom:80px;   /* Height of the footer element */
+}
 .header {
     text-align: center;
     font-size: 400%;
@@ -86,6 +94,15 @@ div.box_right {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-bottom: 30;
 }
+div.box_middle {
+    padding: 10px;
+    width: 80%;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
 ul.regular {
     text-align: left;
     display: block; 
@@ -112,24 +129,15 @@ img.profile {
 .exp_title {
     margin-top: -40;
     font-size: 150%;
+    text-decoration: none;
 }
 .exp_company {
     margin-top: -20;
     text-align: center;
     color: rgb(122, 122, 122);
+    text-decoration: none;
 }
 .footer {
-    /* clear: both;
-    position: relative;
-    height: 40px;
-    margin-top: -40px;
-    padding-top: 15px;
-    background-color: #000000;
-    text-align: center;
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-bottom: -55px;
-    color: white; */
     position: absolute;
     right: 0;
     bottom: 0;
@@ -139,7 +147,9 @@ img.profile {
     background-color: #252525;
     text-align: center;
 }
-
+.no_underline {
+    text-decoration: none;
+}
 
 /*----------------
 - Navigation Bar -
@@ -228,6 +238,34 @@ li.dropdown {
 }
 .modal-window > div {
     width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #ffffff;
+    color: #333333;
+}
+.modal-window-awards {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.modal-window-awards:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-window-awards > div {
+    width: 800px;
     position: absolute;
     top: 50%;
     left: 50%;
