@@ -12,14 +12,14 @@ a { color: inherit; }
 #wrapper { min-height:100%; position:relative; }
 #content { padding:10px; padding-bottom:80px; }
 .header { text-align: center; font-size: 400%; padding-top: 20px; padding-bottom: 0px; }
-p.home { padding: 10px; } /* CHANGE TO MOD */
+p.mod { padding: 10px; } /* CHANGE TO MOD */
 div.box_left_home { margin-top: 5; margin-left: 60; padding: 10px; width: 60%; background-color: rgb(233, 233, 233); float: left; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); margin-bottom: 30; }
 div.box_left { margin-top: 5; margin-left: 60; padding: 10px; width: 40%; background-color: rgb(233, 233, 233); float: left; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); margin-bottom: 30; }
 div.box_right { margin-top: 5; margin-right: 60; padding: 10px; width: 40%; background-color: rgb(233, 233, 233); float: right; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); margin-bottom: 30; }
 div.box_middle { padding: 10px; width: 80%; background-color: rgb(233, 233, 233); box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); margin: 0 auto; margin-bottom: 20px; text-decoration: none; }
 img.profile { margin-right: 60; bottom: 100; width: 20%; float: right; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
-.exp_title { margin-top: -40; font-size: 150%; text-decoration: none; } /* CHANGE TO MOD */
-.exp_company { margin-top: -20; text-align: center; color: rgb(122, 122, 122); text-decoration: none; } /* CHANGE TO MOD */
+.mod_title { margin-top: -40; font-size: 150%; text-decoration: none; } /* CHANGE TO MOD */
+.mod_subtitle { margin-top: -20; text-align: center; color: rgb(122, 122, 122); text-decoration: none; } /* CHANGE TO MOD */
 .footer { position: absolute; right: 0; bottom: 0; left: 0; padding: 1rem; color: white; background-color: #252525; text-align: center; }
 .no_underline { text-decoration: none;}
 
@@ -39,9 +39,9 @@ li.dropdown { display: inline-block; padding: 0px; }
 .modal-window { position: fixed; background-color: rgba(0, 0, 0, 0.25); top: 0; right: 0; bottom: 0; left: 0; z-index: 999; opacity: 0; pointer-events: none; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 .modal-window:target { opacity: 1; pointer-events: auto; }
 .modal-window > div { width: 600px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 2em; background: #ffffff; color: #333333; }
-.modal-window-awards { position: fixed; background-color: rgba(0, 0, 0, 0.25); top: 0; right: 0; bottom: 0; left: 0; z-index: 999; opacity: 0; pointer-events: none; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-.modal-window-awards:target { opacity: 1; pointer-events: auto; }
-.modal-window-awards > div { width: 800px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 2em; background: #ffffff; color: #333333; }
+.modal-window-large { position: fixed; background-color: rgba(0, 0, 0, 0.25); top: 0; right: 0; bottom: 0; left: 0; z-index: 999; opacity: 0; pointer-events: none; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+.modal-window-large:target { opacity: 1; pointer-events: auto; }
+.modal-window-large > div { width: 800px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 2em; background: #ffffff; color: #333333; }
 .modal-window header { font-weight: bold; }
 .modal-window h1 { font-size: 150%; margin: 0 0 15px; color: #333333; }
 .modal-close { color: #aaa; line-height: 50px; font-size: 80%; position: absolute; right: 0; text-align: center; top: 0; width: 70px; text-decoration: none; }
